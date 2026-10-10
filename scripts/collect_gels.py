@@ -47,6 +47,8 @@ ALIAS = {
     "israel": "ISR", "oman": "OMN", "bahrein": "BHR", "sri lanka": "LKA", "bangladesh": "BGD",
     "seychelles": "SYC", "iles vierges britanniques": "VGB", "panama": "PAN", "belize": "BLZ",
     "marshall": "MHL", "iles marshall": "MHL", "liberia": "LBR", "comores": "COM",
+    "trinidad et tobago": "TTO", "republique tcheque": "CZE", "iles caimanes": "CYM",
+    "saint kitts et nevis": "KNA", "saint christophe et nieves": "KNA",
     "france": "FRA",
 }
 
