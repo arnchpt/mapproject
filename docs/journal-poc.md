@@ -31,3 +31,7 @@ Une ligne par semaine : un coup d'œil à la carte et à l'onglet Actions suffit
 ## Test non-initié
 
 Date, profil du testeur, temps pour comprendre un pays, ce qu'il n'a pas compris :
+
+## Comptes rendus automatiques
+
+Chaque lundi, une tâche planifiée produit un compte rendu dans `docs/comptes-rendus/` (fiabilité de la collecte, fraîcheur des données, évolution des valeurs) à partir de `scripts/compte_rendu.py`. Le compte rendu du 10/10/2026 sert d'état de départ.
