@@ -284,7 +284,11 @@
       const f = geo.features.find(x => x.properties.iso3 === iso3);
       const b = new maplibregl.LngLatBounds();
       const ajouter = c => (typeof c[0] === "number" ? b.extend(c) : c.forEach(ajouter));
-      ajouter(f.geometry.coordinates);
+      // On cadre sur le plus grand territoire du pays (évite de dézoomer sur tout le globe
+      // pour un pays à îles lointaines ou à cheval sur l'antiméridien, comme la Russie).
+      const polygones = f.geometry.type === "MultiPolygon" ? f.geometry.coordinates : [f.geometry.coordinates];
+      const principal = polygones.reduce((a, p) => (p[0].length > a[0].length ? p : a));
+      ajouter(principal);
       carte.fitBounds(b, { padding: 60, maxZoom: 5 });
       ouvrirFiche(iso3);
     });
