@@ -1,0 +1,66 @@
+{
+  "commerce": {
+    "annee": 2025,
+    "codes_non_rattaches": [
+      "BQ",
+      "BV",
+      "CC",
+      "CX",
+      "EH",
+      "EXT_EA",
+      "EXT_EA21",
+      "EXT_EU",
+      "EXT_EU27_2020",
+      "INT_EA",
+      "INT_EA21",
+      "INT_EU",
+      "INT_EU27_2020",
+      "QP",
+      "QR",
+      "QS",
+      "QV",
+      "QW",
+      "QY",
+      "QZ",
+      "TK",
+      "WORLD",
+      "XC",
+      "XL"
+    ],
+    "derniere_reussite": "2026-10-10T18:48:31Z",
+    "derniere_tentative": "2026-10-10T18:48:31Z",
+    "nb_pays": 229,
+    "ok": true
+  },
+  "gels": {
+    "date_publication_registre": "2026-10-09T14:50:59.6651387+02:00",
+    "derniere_reussite": "2026-10-10T18:48:37Z",
+    "derniere_tentative": "2026-10-10T18:48:37Z",
+    "nb_entrees_registre": 6609,
+    "nb_entrees_sans_pays": 2337,
+    "nb_pays": 110,
+    "noms_pays_non_rattaches": [
+      "TRINIDAD ET TOBAGO (6)",
+      "RÉPUBLIQUE TCHÈQUE (4)",
+      "ÎLES CAÏMANES (2)",
+      "SAINT-KITTS-ET-NEVIS (1)"
+    ],
+    "ok": true
+  },
+  "imf": {
+    "croissance_pib": {
+      "annee": 2025,
+      "edition": "World Economic Outlook (April 2026)",
+      "mise_a_jour_source": "2026-04-08 16:07:34"
+    },
+    "derniere_reussite": "2026-10-10T18:48:29Z",
+    "derniere_tentative": "2026-10-10T18:48:29Z",
+    "dette_publique": {
+      "annee": 2025,
+      "edition": "World Economic Outlook (April 2026)",
+      "mise_a_jour_source": "2026-04-08 16:07:44"
+    },
+    "nb_pays": 193,
+    "ok": true
+  }
+}
