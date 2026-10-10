@@ -27,24 +27,19 @@
       "XC",
       "XL"
     ],
-    "derniere_reussite": "2026-10-10T18:48:31Z",
-    "derniere_tentative": "2026-10-10T18:48:31Z",
+    "derniere_reussite": "2026-10-10T18:51:48Z",
+    "derniere_tentative": "2026-10-10T18:51:48Z",
     "nb_pays": 229,
     "ok": true
   },
   "gels": {
     "date_publication_registre": "2026-10-09T14:50:59.6651387+02:00",
-    "derniere_reussite": "2026-10-10T18:48:37Z",
-    "derniere_tentative": "2026-10-10T18:48:37Z",
+    "derniere_reussite": "2026-10-10T18:51:58Z",
+    "derniere_tentative": "2026-10-10T18:51:58Z",
     "nb_entrees_registre": 6609,
     "nb_entrees_sans_pays": 2337,
-    "nb_pays": 110,
-    "noms_pays_non_rattaches": [
-      "TRINIDAD ET TOBAGO (6)",
-      "RÉPUBLIQUE TCHÈQUE (4)",
-      "ÎLES CAÏMANES (2)",
-      "SAINT-KITTS-ET-NEVIS (1)"
-    ],
+    "nb_pays": 114,
+    "noms_pays_non_rattaches": [],
     "ok": true
   },
   "imf": {
@@ -53,8 +48,8 @@
       "edition": "World Economic Outlook (April 2026)",
       "mise_a_jour_source": "2026-04-08 16:07:34"
     },
-    "derniere_reussite": "2026-10-10T18:48:29Z",
-    "derniere_tentative": "2026-10-10T18:48:29Z",
+    "derniere_reussite": "2026-10-10T18:51:47Z",
+    "derniere_tentative": "2026-10-10T18:51:47Z",
     "dette_publique": {
       "annee": 2025,
       "edition": "World Economic Outlook (April 2026)",
