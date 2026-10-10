@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La France dans le monde</title>
+  <meta name="description" content="Carte publique des faits : relations de la France avec chaque pays et santé économique, sources et dates affichées.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;600;700&family=Literata:opsz,wght@7..72,500;7..72,650&display=swap" rel="stylesheet">
+  <link href="vendor/maplibre-gl.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="barre">
+    <div class="titre">
+      <h1>La France dans le monde</h1>
+      <p>Des faits datés et sourcés, pays par pays. Aucune note, aucun jugement.</p>
+    </div>
+    <nav class="couches" aria-label="Indicateur affiché sur la carte" id="couches"></nav>
+    <label class="recherche">
+      <span class="sr">Chercher un pays</span>
+      <input id="recherche" list="liste-pays" placeholder="Chercher un pays" autocomplete="off">
+      <datalist id="liste-pays"></datalist>
+    </label>
+  </header>
+
+  <div id="alertes" class="alertes" role="status" aria-live="polite"></div>
+
+  <main class="scene">
+    <div id="carte" class="carte" aria-label="Carte du monde"></div>
+    <div id="infobulle" class="infobulle" hidden></div>
+
+    <section class="legende" aria-label="Légende">
+      <h2 id="legende-titre"></h2>
+      <ol id="legende-classes"></ol>
+      <p id="legende-source" class="petit"></p>
+    </section>
+
+    <aside id="fiche" class="fiche" aria-labelledby="fiche-nom" hidden>
+      <button class="fermer" id="fermer" aria-label="Fermer la fiche">×</button>
+      <h2 id="fiche-nom"></h2>
+      <div id="fiche-contenu"></div>
+    </aside>
+  </main>
+
+  <footer class="pied">
+    <p>Projet indépendant, non affilié au ministère de l'Europe et des Affaires étrangères ni à aucune administration.
+      Les données sont collectées automatiquement chaque nuit auprès des sources citées.
+      <span id="genere"></span></p>
+    <p>Télécharger les données : <a href="data/imf.csv">macro-économie</a>, <a href="data/commerce.csv">commerce</a>, <a href="data/gels.csv">gels d'avoirs</a>.
+      Code et méthode : <a href="https://github.com/arnchpt/mapproject">dépôt public</a>.</p>
+  </footer>
+
+  <script src="vendor/maplibre-gl.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

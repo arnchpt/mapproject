@@ -1,0 +1,70 @@
+# Collecte automatique des données puis publication de la carte sur GitHub Pages.
+# Se lance chaque nuit, à chaque modification des scripts ou du site, et à la demande
+# (onglet « Actions » > « Collecte et publication » > « Run workflow »).
+name: Collecte et publication
+
+on:
+  schedule:
+    - cron: "17 3 * * *"   # tous les jours vers 5 h 17 (heure de Paris, été)
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["scripts/**", "site/**", ".github/workflows/**"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: collecte
+  cancel-in-progress: false
+
+jobs:
+  collecte:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Chaque collecte est indépendante : si l'une échoue, les autres continuent
+      # et l'échec est affiché sur la carte.
+      - name: Collecte IMF
+        run: python scripts/collect_imf.py
+      - name: Collecte commerce (Eurostat Comext)
+        run: python scripts/collect_comext.py
+      - name: Collecte gels d'avoirs (DG Trésor)
+        run: python scripts/collect_gels.py
+      - name: Assemblage des données de la carte
+        run: python scripts/build_site.py
+
+      - name: Enregistrement des données dans le dépôt
+        run: |
+          git config user.name "collecte-automatique"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data site/data
+          if git diff --cached --quiet; then
+            echo "Aucun changement."
+          else
+            git commit -m "Collecte automatique du $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  publication:
+    needs: collecte
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploiement.outputs.page_url }}
+    steps:
+      - id: deploiement
+        uses: actions/deploy-pages@v4
