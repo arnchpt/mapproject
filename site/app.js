@@ -289,7 +289,15 @@
       const polygones = f.geometry.type === "MultiPolygon" ? f.geometry.coordinates : [f.geometry.coordinates];
       const principal = polygones.reduce((a, p) => (p[0].length > a[0].length ? p : a));
       ajouter(principal);
-      carte.fitBounds(b, { padding: 60, maxZoom: 5 });
+      // On laisse de la place à la fiche (à droite sur ordinateur, en bas sur mobile).
+      const mobile = window.innerWidth <= 700;
+      const zone = carte.getContainer();
+      const cadre = carte.cameraForBounds(b, { padding: 40, maxZoom: 5 }) || { center: b.getCenter(), zoom: 3 };
+      carte.flyTo({
+        center: cadre.center,
+        zoom: Math.max((cadre.zoom || 3) - (mobile ? 1 : 0.5), 1),
+        offset: mobile ? [0, -zone.clientHeight * 0.33] : [-Math.min(220, zone.clientWidth / 4), 0],
+      });
       ouvrirFiche(iso3);
     });
   }
