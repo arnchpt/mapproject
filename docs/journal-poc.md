@@ -17,7 +17,7 @@ Une ligne par semaine : un coup d'œil à la carte et à l'onglet Actions suffit
 
 | Semaine du | Nuits en échec (sur 7) | Bandeau visible ? | Temps passé | Remarques |
 |---|---|---|---|---|
-| | | | | |
+| 05/10/2026 (PoC depuis le 10/10) | 0 / 2 nuits écoulées (collecte du 12/10 pas encore passée à 9 h) | non (attendu, aucune source en défaut) | à compléter par Arnaud | 18/18 collectes OK ; collecte planifiée du 11/10 retardée à 12 h (Paris) ; carte en ligne non vérifiée (accès web refusé) |
 | | | | | |
 | | | | | |
 | | | | | |
