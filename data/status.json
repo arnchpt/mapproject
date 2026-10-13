@@ -27,15 +27,15 @@
       "XC",
       "XL"
     ],
-    "derniere_reussite": "2026-10-12T10:54:42Z",
-    "derniere_tentative": "2026-10-12T10:54:42Z",
+    "derniere_reussite": "2026-10-13T10:39:40Z",
+    "derniere_tentative": "2026-10-13T10:39:40Z",
     "nb_pays": 229,
     "ok": true
   },
   "gels": {
     "date_publication_registre": "2026-10-09T14:50:59.6651387+02:00",
-    "derniere_reussite": "2026-10-12T10:54:55Z",
-    "derniere_tentative": "2026-10-12T10:54:55Z",
+    "derniere_reussite": "2026-10-13T10:39:52Z",
+    "derniere_tentative": "2026-10-13T10:39:52Z",
     "nb_entrees_registre": 6609,
     "nb_entrees_sans_pays": 2337,
     "nb_pays": 114,
@@ -45,17 +45,17 @@
   "imf": {
     "croissance_pib": {
       "annee": 2025,
-      "edition": "World Economic Outlook (April 2026)",
-      "mise_a_jour_source": "2026-04-08 16:07:34"
+      "edition": "World Economic Outlook (October 2026)",
+      "mise_a_jour_source": "2026-10-08 14:43:32"
     },
-    "derniere_reussite": "2026-10-12T10:54:41Z",
-    "derniere_tentative": "2026-10-12T10:54:41Z",
+    "derniere_reussite": "2026-10-13T10:39:39Z",
+    "derniere_tentative": "2026-10-13T10:39:39Z",
     "dette_publique": {
       "annee": 2025,
-      "edition": "World Economic Outlook (April 2026)",
-      "mise_a_jour_source": "2026-04-08 16:07:44"
+      "edition": "World Economic Outlook (October 2026)",
+      "mise_a_jour_source": "2026-10-08 14:43:40"
     },
-    "nb_pays": 193,
+    "nb_pays": 195,
     "ok": true
   }
 }
