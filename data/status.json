@@ -27,20 +27,21 @@
       "XC",
       "XL"
     ],
-    "derniere_reussite": "2026-10-15T08:21:22Z",
-    "derniere_tentative": "2026-10-15T08:21:22Z",
+    "derniere_reussite": "2026-10-16T08:13:57Z",
+    "derniere_tentative": "2026-10-16T08:13:57Z",
     "nb_pays": 229,
     "ok": true
   },
   "gels": {
     "date_publication_registre": "2026-10-14T19:15:43.7657355+02:00",
     "derniere_reussite": "2026-10-15T08:21:37Z",
-    "derniere_tentative": "2026-10-15T08:21:37Z",
+    "derniere_tentative": "2026-10-16T08:14:28Z",
+    "erreur": "Téléchargement impossible : https://gels-avoirs.dgtresor.gouv.fr/ApiPublic/api/v1/publication/derniere-publication-fichier-json (Remote end closed connection without response)",
     "nb_entrees_registre": 7223,
     "nb_entrees_sans_pays": 2349,
     "nb_pays": 114,
     "noms_pays_non_rattaches": [],
-    "ok": true
+    "ok": false
   },
   "imf": {
     "croissance_pib": {
@@ -48,8 +49,8 @@
       "edition": "World Economic Outlook (October 2026)",
       "mise_a_jour_source": "2026-10-08 14:43:32"
     },
-    "derniere_reussite": "2026-10-15T08:21:21Z",
-    "derniere_tentative": "2026-10-15T08:21:21Z",
+    "derniere_reussite": "2026-10-16T08:13:56Z",
+    "derniere_tentative": "2026-10-16T08:13:56Z",
     "dette_publique": {
       "annee": 2025,
       "edition": "World Economic Outlook (October 2026)",
