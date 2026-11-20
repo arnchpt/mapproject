@@ -27,16 +27,16 @@
       "XC",
       "XL"
     ],
-    "derniere_reussite": "2026-11-19T11:44:18Z",
-    "derniere_tentative": "2026-11-19T11:44:18Z",
+    "derniere_reussite": "2026-11-20T11:44:43Z",
+    "derniere_tentative": "2026-11-20T11:44:43Z",
     "nb_pays": 229,
     "ok": true
   },
   "gels": {
-    "date_publication_registre": "2026-11-18T17:15:02.650031+01:00",
-    "derniere_reussite": "2026-11-19T11:45:15Z",
-    "derniere_tentative": "2026-11-19T11:45:15Z",
-    "nb_entrees_registre": 8378,
+    "date_publication_registre": "2026-11-19T19:05:04.8076051+01:00",
+    "derniere_reussite": "2026-11-20T11:44:59Z",
+    "derniere_tentative": "2026-11-20T11:44:59Z",
+    "nb_entrees_registre": 8379,
     "nb_entrees_sans_pays": 2762,
     "nb_pays": 115,
     "noms_pays_non_rattaches": [],
@@ -49,13 +49,14 @@
       "mise_a_jour_source": "2026-10-08 14:43:32"
     },
     "derniere_reussite": "2026-11-19T11:44:17Z",
-    "derniere_tentative": "2026-11-19T11:44:17Z",
+    "derniere_tentative": "2026-11-20T11:44:42Z",
     "dette_publique": {
       "annee": 2025,
       "edition": "World Economic Outlook (October 2026)",
       "mise_a_jour_source": "2026-10-08 14:43:40"
     },
+    "erreur": "Téléchargement impossible : https://www.imf.org/external/datamapper/api/v2/NGDP_RPCH (HTTP Error 404: Not Found)",
     "nb_pays": 195,
-    "ok": true
+    "ok": false
   }
 }
