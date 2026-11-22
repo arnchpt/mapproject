@@ -27,15 +27,15 @@
       "XC",
       "XL"
     ],
-    "derniere_reussite": "2026-11-21T11:08:22Z",
-    "derniere_tentative": "2026-11-21T11:08:22Z",
+    "derniere_reussite": "2026-11-22T11:29:39Z",
+    "derniere_tentative": "2026-11-22T11:29:39Z",
     "nb_pays": 229,
     "ok": true
   },
   "gels": {
     "date_publication_registre": "2026-11-19T19:05:04.8076051+01:00",
-    "derniere_reussite": "2026-11-21T11:08:32Z",
-    "derniere_tentative": "2026-11-21T11:08:32Z",
+    "derniere_reussite": "2026-11-22T11:29:55Z",
+    "derniere_tentative": "2026-11-22T11:29:55Z",
     "nb_entrees_registre": 8379,
     "nb_entrees_sans_pays": 2762,
     "nb_pays": 115,
@@ -49,7 +49,7 @@
       "mise_a_jour_source": "2026-10-08 14:43:32"
     },
     "derniere_reussite": "2026-11-19T11:44:17Z",
-    "derniere_tentative": "2026-11-21T11:08:21Z",
+    "derniere_tentative": "2026-11-22T11:29:38Z",
     "dette_publique": {
       "annee": 2025,
       "edition": "World Economic Outlook (October 2026)",
